@@ -2,7 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.GrafikaKomputer" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryDark">@color/blue_primary_variant</item>
+        <item name="colorSecondary">@color/blue_secondary</item>
+        <item name="android:statusBarColor">@color/blue_primary</item>
+        <item name="android:windowBackground">@color/blue_surface</item>
     </style>
 
     <style name="Theme.GrafikaKomputer" parent="Base.Theme.GrafikaKomputer" />

@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Blue Modern Theme Palette -->
+    <color name="blue_primary">#1565C0</color>
+    <color name="blue_primary_variant">#0D47A1</color>
+    <color name="blue_secondary">#0288D1</color>
+    <color name="blue_secondary_variant">#01579B</color>
+    <color name="blue_surface">#F0F6FC</color>
+    <color name="blue_card_bg">#FFFFFF</color>
+    <color name="blue_card_stroke">#BBDEFB</color>
+    <color name="blue_light_accent">#E3F2FD</color>
+
+    <!-- Canvas & Line Colors -->
+    <color name="line_dda">#1976D2</color>
+    <color name="line_bresenham">#D32F2F</color>
+    <color name="grid_color">#E0E0E0</color>
+    <color name="axis_color">#37474F</color>
 </resources>

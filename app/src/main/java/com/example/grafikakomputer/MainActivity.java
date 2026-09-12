@@ -1,10 +1,12 @@
+// Anggota Kelompok 3 Kelas A:
+// - I Putu Gede Oka Adyuta (2408561067)
+// - ...
+
 package com.example.grafikakomputer;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -48,25 +50,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void pasangAksi() {
-        btnGambar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                prosesGambarGaris();
-            }
-        });
+        btnGambar.setOnClickListener(v -> prosesGambarGaris());
 
-        btnBersihkan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                canvasGarisView.bersihkanSemua();
-            }
-        });
+        btnBersihkan.setOnClickListener(v -> canvasGarisView.bersihkanSemua());
     }
 
     /**
-     * Ambil input dari EditText, validasi, lalu buat objek Garis
-     * sesuai algoritma yang dipilih (DDA atau Bresenham),
-     * lalu tambahkan ke canvas agar tampil bersama garis lain yang sudah ada.
+     * Mengambil input dari EditText, memvalidasi koordinat, lalu membuat objek Garis
+     * berdasarkan algoritma yang dipilih (DDA atau Bresenham),
+     * kemudian menambahkannya ke canvas.
      */
     private void prosesGambarGaris() {
         String sX1 = edtX1.getText().toString().trim();
@@ -75,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         String sY2 = edtY2.getText().toString().trim();
 
         if (sX1.isEmpty() || sY1.isEmpty() || sX2.isEmpty() || sY2.isEmpty()) {
-            Toast.makeText(this, "Isi semua koordinat x1, y1, x2, y2", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Isi semua koordinat (X1, Y1, X2, Y2)", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -96,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        RadioButton rbTerpilih = findViewById(idTerpilih);
-        Garis.Algoritma algoritma = rbTerpilih.getText().toString().equalsIgnoreCase("DDA")
+        // Penentuan algoritma berdasarkan ID radio button
+        Garis.Algoritma algoritma = (idTerpilih == R.id.rbDDA)
                 ? Garis.Algoritma.DDA
                 : Garis.Algoritma.BRESENHAM;
 

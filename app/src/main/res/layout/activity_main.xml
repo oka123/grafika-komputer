@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Algoritma Garis: DDA &amp; Bresenham"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtX1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="x1"
+            android:inputType="numberSigned"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/edtY1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="y1"
+            android:inputType="numberSigned"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/edtX2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="x2"
+            android:inputType="numberSigned"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/edtY2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="y2"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgAlgoritma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbDDA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DDA"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbBresenham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bresenham"
+            android:layout_marginStart="24dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnGambar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gambar Garis"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnBersihkan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bersihkan" />
+    </LinearLayout>
+
+    <com.example.grafikakomputer.CanvasGarisView
+        android:id="@+id/canvasGarisView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF" />
+
+</LinearLayout>

@@ -1,6 +1,10 @@
 // Anggota Kelompok 3 Kelas A:
-// - I Putu Gede Oka Adyuta (2408561067)
-// - ...
+//- Joyrich Immanuel Lantang (2408561046)
+//- I Gusti Ayu Titania Pramesti Maharani (2408561049)
+//- Rahmad Dhani (2408561064)
+//- Kenneth Mighty Anggracio (2408561065)
+//- I Putu Gede Oka Adyuta (2408561067)
+
 
 package com.example.grafikakomputer;
 

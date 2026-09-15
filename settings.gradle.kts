@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "GrafikaKomputer"
+rootProject.name = "GrafikaKomputer_Kelompok_3_Kelas_A"
 include(":app")
